@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package sounds;
+
+option go_package = "yangart.proto/zvoice/sounds";
+
+service SoundsService {
+  rpc GetSound(GetSoundRequest) returns (stream GetSoundResponse);
+}
+
+message GetSoundRequest {
+  int32 count = 1;
+}
+
+message GetSoundResponse {
+  bytes data = 1;
+}

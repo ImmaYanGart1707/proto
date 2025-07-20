@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "yangart.proto/zvoice/hello";
+
+service HelloService {
+  rpc SayHello(HelloRequest) returns (HelloResponse);
+  rpc IAmAlive(IAmAliveRequest) returns (IAmAliveResponse);
+}
+
+message HelloRequest {
+  string name = 1;
+}
+
+message HelloResponse {
+  string message = 1;
+}
+
+message IAmAliveRequest{
+}
+
+message IAmAliveResponse{
+  string message = 1;
+}
