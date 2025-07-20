@@ -68,6 +68,7 @@ func (x *GetSoundRequest) GetCount() int32 {
 type GetSoundResponse struct {
 	state         protoimpl.MessageState `protogen:"open.v1"`
 	Data          []byte                 `protobuf:"bytes,1,opt,name=data,proto3" json:"data,omitempty"`
+	IsEnd         bool                   `protobuf:"varint,2,opt,name=isEnd,proto3" json:"isEnd,omitempty"`
 	unknownFields protoimpl.UnknownFields
 	sizeCache     protoimpl.SizeCache
 }
@@ -109,15 +110,23 @@ func (x *GetSoundResponse) GetData() []byte {
 	return nil
 }
 
+func (x *GetSoundResponse) GetIsEnd() bool {
+	if x != nil {
+		return x.IsEnd
+	}
+	return false
+}
+
 var File_zvoice_sounds_sounds_proto protoreflect.FileDescriptor
 
 const file_zvoice_sounds_sounds_proto_rawDesc = "" +
 	"\n" +
 	"\x1azvoice/sounds/sounds.proto\x12\x06sounds\"'\n" +
 	"\x0fGetSoundRequest\x12\x14\n" +
-	"\x05count\x18\x01 \x01(\x05R\x05count\"&\n" +
+	"\x05count\x18\x01 \x01(\x05R\x05count\"<\n" +
 	"\x10GetSoundResponse\x12\x12\n" +
-	"\x04data\x18\x01 \x01(\fR\x04data2P\n" +
+	"\x04data\x18\x01 \x01(\fR\x04data\x12\x14\n" +
+	"\x05isEnd\x18\x02 \x01(\bR\x05isEnd2P\n" +
 	"\rSoundsService\x12?\n" +
 	"\bGetSound\x12\x17.sounds.GetSoundRequest\x1a\x18.sounds.GetSoundResponse0\x01B)Z'github.com/ImmaYanGart1707/proto/soundsb\x06proto3"
 
