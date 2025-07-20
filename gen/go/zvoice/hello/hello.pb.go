@@ -203,7 +203,7 @@ const file_zvoice_hello_hello_proto_rawDesc = "" +
 	"\amessage\x18\x01 \x01(\tR\amessage2\x82\x01\n" +
 	"\fHelloService\x125\n" +
 	"\bSayHello\x12\x13.hello.HelloRequest\x1a\x14.hello.HelloResponse\x12;\n" +
-	"\bIAmAlive\x12\x16.hello.IAmAliveRequest\x1a\x17.hello.IAmAliveResponseB\x1cZ\x1ayangart.proto/zvoice/hellob\x06proto3"
+	"\bIAmAlive\x12\x16.hello.IAmAliveRequest\x1a\x17.hello.IAmAliveResponseB(Z&github.com/ImmaYanGart1707/proto/hellob\x06proto3"
 
 var (
 	file_zvoice_hello_hello_proto_rawDescOnce sync.Once

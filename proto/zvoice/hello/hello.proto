@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package hello;
 
-option go_package = "yangart.proto/zvoice/hello";
+option go_package = "github.com/ImmaYanGart1707/proto/hello";
 
 service HelloService {
   rpc SayHello(HelloRequest) returns (HelloResponse);

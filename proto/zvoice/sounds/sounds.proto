@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package sounds;
 
-option go_package = "yangart.proto/zvoice/sounds";
+option go_package = "github.com/ImmaYanGart1707/proto/sounds";
 
 service SoundsService {
   rpc GetSound(GetSoundRequest) returns (stream GetSoundResponse);

@@ -119,7 +119,7 @@ const file_zvoice_sounds_sounds_proto_rawDesc = "" +
 	"\x10GetSoundResponse\x12\x12\n" +
 	"\x04data\x18\x01 \x01(\fR\x04data2P\n" +
 	"\rSoundsService\x12?\n" +
-	"\bGetSound\x12\x17.sounds.GetSoundRequest\x1a\x18.sounds.GetSoundResponse0\x01B\x1dZ\x1byangart.proto/zvoice/soundsb\x06proto3"
+	"\bGetSound\x12\x17.sounds.GetSoundRequest\x1a\x18.sounds.GetSoundResponse0\x01B)Z'github.com/ImmaYanGart1707/proto/soundsb\x06proto3"
 
 var (
 	file_zvoice_sounds_sounds_proto_rawDescOnce sync.Once
